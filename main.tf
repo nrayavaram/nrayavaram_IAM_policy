@@ -25,8 +25,8 @@ data "google_iam_policy" "admin-project" {
 
     members = [
       #"user:romil@example.com",
-      "group:rajeevgroup@googlegroup.com",
-      "serviceAccount:407536364561-compute@developer.gserviceaccount.com"
+      "group:nrayavaram@google.com",
+      "serviceAccount:rnk-8951@airline1-sabre-wolverine.iam.gserviceaccount.com"
     ]
   }
 }
@@ -37,8 +37,8 @@ resource "google_project_iam_binding" "project-binding" {
 
   members = [
     #"user:jane@example.com",
-    "group:rajeevgroup@googlegroup.com",
-    "serviceAccount:407536364561-compute@developer.gserviceaccount.com"
+    "group:nrayavaram@google.com",
+    "serviceAccount:rnk-8951@airline1-sabre-wolverine.iam.gserviceaccount.com"
   ]
 }
 
@@ -46,7 +46,7 @@ resource "google_project_iam_member" "project-iam-member" {
   project = "airline1-sabre-wolverine"
   role    = "roles/editor"
   #member  = "user:ravi@example.com"
-  member = "group:rajeevgroup@googlegroup.com"
+  member = "group:nrayavaram@google.com"
   
 }
 
@@ -61,8 +61,8 @@ data "google_iam_policy" "admin" {
 
     members = [
       #"user:mahesh@example.com",
-      "group:rajeevgroup@googlegroup.com",
-      "serviceAccount:407536364561-compute@developer.gserviceaccount.com"
+      "group:nrayavaram@google.com",
+      "serviceAccount:rnk-8951@airline1-sabre-wolverine.iam.gserviceaccount.com"
     ]
   }
 }
@@ -73,7 +73,7 @@ resource "google_organization_iam_binding" "organization-binding" {
 
   members = [
     #"user:jane@example.com",
-    "serviceAccount:407536364561-compute@developer.gserviceaccount.com"
+    "serviceAccount:rnk-8951@airline1-sabre-wolverine.iam.gserviceaccount.com"
   ]
 }
 
@@ -81,6 +81,6 @@ resource "google_organization_iam_member" "organization-member" {
   org_id      = "airline1"  
   role    = "roles/editor"
   #member  = "user:rajeev@example.com"
-  member = "group:rajeevgroup@googlegroup.com"
+  member = "group:nrayavaram@google.com.com"
 }
 
