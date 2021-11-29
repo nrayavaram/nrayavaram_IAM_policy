@@ -13,7 +13,7 @@ data "google_iam_policy" "admin" {
     role = "roles/compute.admin"
 
     members = [
-      "user:nrayavaram@google.com",
+      "user:jane@example.com",
     ]
 
     condition {
